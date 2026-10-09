@@ -1,0 +1,1851 @@
+@media (max-width: 500px) {
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Roboto', sans-serif;
+        background: white;
+        overflow-x: hidden;
+        overflow-y: auto; /* Страница скроллится */
+
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    a {
+        text-decoration: none;      /* убирает подчеркивание */
+        color: inherit;             /* наследует цвет текста */
+        -webkit-tap-highlight-color: transparent; /* убирает синюю подсветку на телефонах */
+    }
+
+    a:focus,
+    a:active {
+        outline: none;
+    }
+
+    .no-copy {
+        user-select: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+    }
+
+    .header {
+        width: 100%;
+        height: 7vh;
+        position: relative;
+        background: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .header p {
+        font-size: 4vw;
+        font-weight: 400;
+        color: #777777;
+        position: absolute;
+        left: 8vw;
+
+    }
+
+    .search {
+        width: 90%;
+        height: 57.5%;
+        background: #ececec;
+        border-radius: 1vw;
+        position: absolute;
+        border: none;
+    }
+
+    .section1 {
+	    width: 95%;
+	    height: 13.5vh;
+	    position: relative;
+	    background: white;
+        left: 4.5vw;
+
+	    display: flex;
+	    gap: 4vw;
+        overflow: hidden;
+
+	    overflow-x: auto;
+	    overflow-y: hidden;
+	    scroll-snap-type: x mandatory;
+	    -webkit-overflow-scrolling: touch;
+
+	    padding-left: 20%;
+	    box-sizing: border-box;
+
+	    scrollbar-width: none;      /* Firefox */
+	    -ms-overflow-style: none;   /* IE/Edge */
+	}
+
+	.section1::-webkit-scrollbar {
+	    display: none; /* Chrome / Safari */
+	}
+
+    .box-section1 {
+        width: 42.5vw;   /* Чтобы карточки не сжимались */
+        height: 13.5vh;
+        background: #d3d3d3;
+        border-radius: 4vw;
+        position: relative;
+
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .box-section1 img {
+        width: 100%;
+        height: 100%;
+    }
+
+
+
+
+
+    .section2 {
+        width: 100%;
+        height: 21vh;
+        position: relative;
+        background: white;
+        border-bottom: 0.1vh solid #d9d9d9;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .section2-boxs {
+        width: 90%;
+        height: 9vh;
+        position: absolute;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .section2-boxs2 {
+        width: 90%;
+        height: 9vh;
+        position: absolute;
+        top: 9.5vh;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box {
+        width: 20vw;
+        height: 100%;
+        position: relative;
+        background: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .box img {
+        position: relative;
+        width: 79%;
+    }
+
+    .box p {
+        position: absolute;
+        color: #111;
+        top: 6vh;
+        font-size: 3.5vw;
+        font-weight: 400;
+        z-index: 1;
+    }
+
+
+
+
+
+
+
+
+    .section3 {
+        width: 100%;
+        height: 15.5vh;
+        position: relative;
+        overflow: hidden;
+        top: 1.5vh;
+    }
+
+    .section3-boxs1 {
+        width: 95vw;
+        height: 6.5vh;
+        position: relative;
+        left: 5%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .box3 {
+        width: 47vw;
+        height: 100%;
+        position: relative;
+        display: flex;
+        align-items: center;
+    }
+
+    .box3 img {
+        height: 5vh;
+        width: 16vw;
+        position: relative;
+        border-radius: 2vw;
+    }
+
+    .box3 p {
+        color: #111;
+        position: relative;
+        font-weight: 500;
+        font-size: 4vw;
+        left: 2.5vw;
+        width: 25vw;
+    }
+
+    .box3 span {
+        font-size: 3.5vw;
+        font-weight: 500;
+        color: #9e9e9e;
+    }
+
+
+
+
+
+
+
+
+    /* section4 и box4 — переопределены в style3.css */
+
+
+
+
+
+
+    .section5 {
+        width: 100%;
+        height: 15vh;
+        position: relative;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section5 div {
+        width: 90%;
+        height: 92.5%;
+        position: relative;
+        background:  #d9d9d9;
+        border-radius: 2vw;
+        overflow: hidden;
+    }
+
+    .section5 img {
+        position: relative;
+        height: 100%;
+        width: 100%;
+    }
+
+
+    .footer {
+        width: 100%;
+        height: 10vh;
+        position: fixed;
+        z-index: 200;
+        top: 90vh;
+        background: white;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer div {
+        width: 85%;
+        height: 100%;
+        position: relative;
+        height: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer img {
+        height: 4vh;
+        position: relative;
+        top: 0.5vh;
+    }
+
+    .a p {
+        font-size: 3vw;
+        color: #9e9e9e;
+        position: absolute;
+        top: 3vh;
+        font-weight: 400;
+        margin-left: -1.5vw;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+/* PIN панель */
+
+#pinPanel{
+
+position:fixed;
+bottom:-100vh;
+
+left:0;
+width:100vw;
+height:100vh;
+
+background:white;
+
+transition:0.35s;
+
+z-index:200;
+
+}
+
+
+/* открыто */
+
+#pinPanel.show{
+
+bottom:0;
+
+}
+
+
+
+.panel-content{
+
+text-align:center;
+position: relative;
+top:32.5vh;
+font-family:'Roboto', sans-serif;
+
+}
+
+
+
+/* Заголовок */
+
+.title{
+
+font-size:4.25vw;
+font-weight:400;
+position: absolute;
+top: 0;
+
+}
+
+
+
+/* Кружки */
+
+.dots{
+
+margin-bottom:5vh;
+
+}
+
+.dot{
+
+width:2.75vw;
+height:2.75vw;
+
+border-radius:50%;
+
+background:#e4e4e4;
+
+display:inline-block;
+
+margin:2.75vw;
+position: relative;
+margin-top: 5vh;
+
+}
+
+.active{
+
+background:red;
+
+}
+
+
+
+/* Клавиатура */
+
+.keypad{
+
+width: 80vw;
+
+margin:auto;
+
+display:grid;
+
+grid-template-columns:repeat(3,1fr);
+
+gap: 11vw;
+
+bottom: 10vh;
+
+}
+
+
+
+/* Нижний ряд */
+
+.bottom{
+
+width:70vw;
+
+margin:auto;
+
+margin-top:5vh;
+
+display:grid;
+
+grid-template-columns:1fr 1fr 1fr;
+
+text-align:center;
+
+}
+
+
+
+.zero{
+
+font-size:7vw;
+cursor:pointer;
+font-weight: 400;
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+
+
+.delete{
+
+font-size: 10vw;
+display: flex;
+
+cursor:pointer;
+
+visibility:hidden;
+position: relative;
+left: 15vw;
+top: -1vh;
+
+}
+
+.key,
+.zero,
+.delete {
+  -webkit-tap-highlight-color: transparent; /* убирает подсветку на телефоне */
+  outline: none;
+}
+
+.key{
+
+cursor:pointer;
+font-size: 7vw;
+font-weight: 400;
+
+}
+
+.panel-box {
+    width: 100vw;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 32vh;
+}
+
+.panel-box2 {
+    width: 100%;
+    height: 14vh;
+    position: absolute;
+    top: 7vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.panel-box2 img {
+    width: 125%;
+    height: auto;
+    margin-top: 1.25vh;
+}
+
+.panel-box2 div {
+    width: 17.5vw;
+    height: 17.5vw;
+    border-radius: 100vw;
+    position: relative;
+    background: rgb(230, 229, 229);
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.panel-box2 input {
+    position: absolute;
+    bottom: 0;
+    font-size: 4vw;
+    width: 100%;
+    border: none;
+    color: black;
+
+    text-align: center;
+    outline: none;
+}
+
+.p1 {
+    font-size: 3.5vw;
+    font-weight: 400;
+    color: #0571ff;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    top: 88.5vh;
+}
+
+.panel-box3 {
+    width: 100%;
+    height: 15vh;
+    position: absolute;
+    top: 3vh;
+
+    display: flex;
+    justify-content: center;
+}
+
+.panel-box3 div {
+    width: 90%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.panel-box3 img {
+    width: 5vw;
+    height: 5vw;
+    position: relative;
+}
+
+
+
+
+
+
+
+/* Панель */
+.pin-panel {
+  position: fixed;
+  bottom: -50vh; /* скрыта внизу */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 90vw;
+  height: 50vh;
+  background: #fff;
+  border-radius: 2vh;
+  box-shadow: 0 1vh 2vh rgba(0,0,0,0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: bottom 0.5s ease;
+  z-index: 10;
+}
+
+.pin-panel.show {
+  bottom: 5vh; /* поднимается вверх */
+}
+
+/* точки */
+.dot2 {
+  display: inline-block;
+  width: 3vh;
+  height: 3vh;
+  margin: 1vh;
+  background: gray;
+  border-radius: 50%;
+}
+
+.dot2.active {
+  background: green;
+}
+
+/* Кнопка удаления */
+#del {
+  visibility: hidden;
+  margin-top: 2vh;
+}
+
+/* ===== LOADER OVERLAY ===== */
+
+.loader-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.55); /* ← мягкая прозрачность */
+  backdrop-filter: blur(2px); /* лёгкое размытие */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease;
+  z-index: 9999;
+}
+
+.loader-overlay.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Сам спиннер */
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 5px solid #e5e5e5;
+  border-top: 5px solid #e60000; /* Kaspi красный */
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Next window */
+.next-window{
+position:fixed;
+top:0;
+left:100vw;      /* окно спрятано справа */
+width:100vw;
+height:100vh;
+background:#ebebeb;
+transition:left .5s ease;
+z-index:10;
+display:flex;
+}
+
+.next-window.show{
+left:0;          /* появляется налево */
+}
+
+    .header-wind {
+		width: 100vw;
+		height: 21vh;
+		position: relative;
+		background: white;
+		border-bottom: 0.25vh solid #ebebeb;
+		top: 0;
+		z-index: 1;
+        border-bottom-left-radius: 3.5vw;
+        border-bottom-right-radius: 3.5vw;
+
+		display: flex;
+		justify-content: center;
+	}
+
+	.header-wind-section {
+		width: 90%;
+		height: 100%;
+		position: relative;
+		background: white;
+	}
+
+	.header-wind-section1 {
+		width: 100%;
+		height: 6vh;
+		background: white;
+		position: relative; 
+		top: 0;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-wind img {
+		position: absolute;
+		left: 0;
+		width: 9vw;
+	}
+
+	.header-wind p {
+		font-size: 4vw;
+		color: black;
+		font-weight: 500;
+	}
+
+	.header-wind-section2 {
+		width: 100%;
+		height: 7vh;
+		background: white;
+		position: relative;
+		background: white;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.header-wind-block {
+		width: 100%;
+		height: 4.5vh;
+		background: #ebebeb;
+		border-radius: 2vw;
+
+		display: flex;
+		align-items: center;
+	}
+
+	.block1-wind {
+		width: 50%;
+		height: 87%;
+		background: white;
+		position: relative;
+		left: 0.5vw;
+		border-radius: 2vw;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		color: black;
+		font-size: 3.5vw;
+	}
+
+	.block2-wind {
+		width: 50%;
+		height: 87%;
+		background: rgba(211, 211, 211, 0.0);
+		position: relative;
+		right: 0.5vw;
+		border-radius: 2vw;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		color: black;
+		font-size: 3.5vw;
+	}
+
+    .section1-wind {
+		width: 100vw;
+		height: 87.2vh;
+		background: #ebebeb;
+		position: relative;
+        left: 0;
+        top: 0;
+        border-top-left-radius: 3.5vw;
+        border-top-right-radius: 3.5vw;
+        border-top: 0.5vh solid #ebebeb;
+	}
+
+    .section2-wind {
+        width: 100vw;
+        height: 87.2vh;
+        background: white;
+        position: relative;
+        bottom: 0;
+        display: none;
+        border-top-left-radius: 3.5vw;
+        border-top-right-radius: 3.5vw;
+        border-top: 0.5vh solid #ebebeb;
+    }
+
+    /* анимация закрытия */
+    .animate-close {
+        animation: animateClose 0.4s forwards;
+    }
+
+    @keyframes animateClose {
+        from {
+            left: 0;
+        }
+        to {
+            left: 100vw;
+        }
+    }
+
+    .header-wind-section1 img {
+        width: 5vw;
+        transform: rotate(180deg);
+    }
+
+    .header-wind-section3 {
+        width: 100%;
+        height: 5vh;
+        position: absolute;
+        bottom: 2vh;
+
+        display: flex;
+        justify-content: center;
+    }
+
+    .header-wind-section3 input {
+        width: 97.5%;
+        border: none;
+        background: #ebebeb;
+        border-radius: 2vw;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .header-wind-section3 div {
+        font-size: 3.5vw;
+        font-weight: 400;
+        color: #777777;
+        position: absolute;
+        left: 5vw;
+        height: 100%;
+        
+        display: flex;
+        align-items: center;
+    }
+
+
+    .wind-section1-box1 {
+        width: 100%;
+        height: 20.5vh;
+        position: relative;
+        border: 0.25vh solid #ebebeb;
+        border-radius: 2vw;
+        background: white;
+    }
+
+    .wind-section1-box1 div {
+        width: 37.5vw;
+        height: 12.5vh;
+        position: relative;
+        background: #ebebeb;
+        top: 2vh;
+        left: 2vw;
+        border-radius: 3vw;
+    }
+
+    .wind-section1-box1 img {
+        width: 60%;
+        position: relative;
+        top: 0.5vh;
+        left: 0;
+    }
+
+    .p2 p {
+        font-size: 3.5vw;
+        font-weight: 400;
+        width: 30vw;
+        position: relative;
+        bottom: 2vh;
+        left: 2.5vw;
+        color: black;
+    }
+
+    .wind-section1-box2 {
+        width: 100%;
+        height: 20vh;
+        position: relative;
+        border: 0.5vh solid #ebebeb;
+        border-radius: 2vw;
+    }
+
+    .p3 {
+        font-size: 4.25vw;
+        font-weight: 500;
+        position: absolute;
+        left: 3vw;
+        bottom: 0vh;
+        color: #0571ff;
+    }
+
+    .wind-section1-box2 {
+        width: 100%;
+        height: 13vh;
+        position: relative;
+        border: 0.5vh solid #ebebeb;
+        border-radius: 2vw;
+        background: white;
+        top: 0.25vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .a1 {
+        width: 95%;
+        position: relative;
+        height: 12.5vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 0.25vh solid #ebebeb;
+    }
+
+    .box-section2-gos {
+        width: 55vw;
+        height: 100%;
+        position: relative;
+        margin-top: -2.5vh;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .border-bottom {
+        width: 30vw;
+        height: 0.01vh;
+        background: #e60000;
+        position: absolute;
+        bottom: 0;
+        left: 2.5vw;
+    }
+
+    .box-section1-gos {
+        width: 35vw;
+        height: 100%;
+        position: relative;
+        margin-top: -2.5vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-box-gos img {
+        width: 95%;
+        position: relative;
+    }
+
+    .img-box-gos {
+        width: 13.5vw;
+        height: 13.5vw;
+        position: relative;
+        background: #ebebeb;
+        border-radius: 3vw;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-box-gos p {
+        position: absolute;
+        bottom: -4.85vh;
+        font-weight: 400;
+        font-size: 4.2vw;
+    }
+
+    .img-box-gos span {
+        color: #e60000;
+        font-weight: 500;
+    }
+
+
+
+    .wind-section1-box3 {
+        width: 100%;
+        height: 50vh;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: white;
+    }
+
+    .wind-section1-box3 section {
+        width: 95%;
+        height: 100%;
+        position: relative;
+        background: white;
+    }
+
+    .main-text {
+        font-size: 4.25vw;
+        color: black;
+        position: relative;
+        left: 0;
+        top: 0;
+        font-weight: 500;
+    }
+
+    .wind-section1-box3 div {
+        width: 100%;
+        height: 17.5vh;
+        position: relative;
+        background: white;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .img-gos-last {
+        width:20vw;
+        height: 15vw;
+        position: relative;
+        left: -3.5vw;
+    }
+
+    .text1-gos-box {
+        font-size: 5.15vw;
+        font-weight: 400;
+        color: black;
+        position: absolute;
+        top: 1.5vh;
+        left: 17vw;
+    }
+
+    .text2-gos-box {
+        font-size: 3.85vw;
+        color: rgb(0, 0, 0);
+        position: absolute;
+        bottom: 0.5vh;
+        left: 17vw;
+        font-weight: 300;
+        width: 45vw;
+        line-height: 2.5vh;
+    }
+
+    .img2-gos-last {
+        position: absolute;
+        right: 5vw;
+        width: 22.5vw;
+    }
+
+    .img3-gos-last {
+        position: absolute;
+        right: 0vw;
+        width: 5vw;
+        opacity: 0.4;
+    }
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* ===== KASPI QR SCREEN ===== */
+@media (max-width: 500px) {
+
+.qr-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  z-index: 300;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: translateY(100%);
+  transition: transform 0.35s ease;
+}
+
+.qr-screen.show {
+  transform: translateY(0);
+}
+
+.qr-header {
+  width: 100%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  flex-shrink: 0;
+}
+
+.qr-header-title {
+  font-size: 4.5vw;
+  font-weight: 600;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+.qr-close-btn {
+  position: absolute;
+  right: 5vw;
+  width: 8vw;
+  height: 8vw;
+  background: rgba(255,255,255,0.18);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 4vw;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.qr-hint {
+  color: white;
+  font-size: 4.5vw;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif;
+  margin-bottom: 3vh;
+  flex-shrink: 0;
+}
+
+.qr-viewport {
+  width: 100vw;
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+#qr-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.qr-overlay {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(
+    ellipse 70vw 70vw at center,
+    transparent 42%,
+    rgba(0,0,0,0.55) 43%
+  );
+}
+
+.qr-frame {
+  width: 68vw;
+  height: 68vw;
+  position: relative;
+  border-radius: 3vw;
+  overflow: hidden;
+}
+
+.qr-corner {
+  position: absolute;
+  width: 8vw;
+  height: 8vw;
+}
+.qr-tl { top:0; left:0;  border-top: 3px solid #e60000; border-left: 3px solid #e60000;  border-top-left-radius: 3vw; }
+.qr-tr { top:0; right:0; border-top: 3px solid #e60000; border-right: 3px solid #e60000; border-top-right-radius: 3vw; }
+.qr-bl { bottom:0; left:0;  border-bottom: 3px solid #e60000; border-left: 3px solid #e60000;  border-bottom-left-radius: 3vw; }
+.qr-br { bottom:0; right:0; border-bottom: 3px solid #e60000; border-right: 3px solid #e60000; border-bottom-right-radius: 3vw; }
+
+.qr-scan-line {
+  display: none;
+}
+
+.qr-torch-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 3.5vh 0 2vh;
+  flex-shrink: 0;
+}
+
+.qr-torch-btn {
+  width: 14vw;
+  height: 14vw;
+  background: rgba(255,255,255,0.15);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+}
+
+/* ======== СТРАНИЦЫ (Сообщения / Сервисы) ======== */
+.page-screen {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 10vh;   /* не заходит под footer */
+  background: #fff;
+  z-index: 50;    /* ниже footer */
+  overflow-y: auto;
+}
+.page-screen.page-open {
+  display: block;
+}
+
+    /* ===== ФИЛЬТРЫ И КАРТОЧКИ ТОВАРОВ ===== */
+
+    .section-filters {
+        width: 100%;
+        padding: 3vw 4vw 2vw 4vw;
+        background: white;
+        box-sizing: border-box;
+    }
+
+    .filters-row {
+        display: flex;
+        gap: 2.5vw;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .filters-row::-webkit-scrollbar {
+        display: none;
+    }
+
+    .filter-btn {
+        flex-shrink: 0;
+        padding: 1.2vw 4.5vw;
+        border-radius: 20vw;
+        font-family: 'Roboto', sans-serif;
+        font-size: 3.6vw;
+        font-weight: 500;
+        cursor: pointer;
+        white-space: nowrap;
+        border: 1.5px solid #e74c3c;
+        background: white;
+        color: #e74c3c;
+    }
+
+    .filter-btn-active {
+        background: #e74c3c;
+        color: white;
+        border-color: #e74c3c;
+    }
+
+    .section-products {
+        width: 100%;
+        padding: 0 3vw 20vw 3vw;
+        box-sizing: border-box;
+        background: white;
+    }
+
+    .product-row {
+        display: flex;
+        gap: 3vw;
+        margin-bottom: 4vw;
+    }
+
+    .product-card {
+        flex: 1;
+        background: white;
+        border-radius: 2.5vw;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .product-img-wrap {
+        width: 100%;
+        aspect-ratio: 1 / 1;
+        background: white;
+        border-radius: 2.5vw;
+        position: relative;
+        height: 20vh;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .product-img-wrap img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 2.5vw;
+    }
+
+    .product-bonus-badge {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background: green;
+        color: white;
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 0.8vw 2vw;
+        border-radius: 1.2vw;
+    }
+
+    .product-info {
+        padding: 2vw 1vw 0 1vw;
+    }
+
+    .product-price {
+        font-size: 4vw;
+        font-weight: 700;
+        color: #111;
+        margin: 0 0 1vw 0;
+    }
+
+    .product-price-bonus {
+        font-size: 3vw;
+        color: green;
+        background: #e8f8ef;
+        border-radius: 1vw;
+        padding: 0.8vw 1.5vw;
+        margin: 0 0 1.5vw 0;
+        display: inline-block;
+        line-height: 1.3;
+        font-weight: 600;
+    }
+
+    .product-price-bonus span {
+        color: #111;
+        font-weight: 400;
+    }
+
+    .product-name {
+        font-size: 3.2vw;
+        font-weight: 400;
+        color: #333;
+        margin: 0 0 1.5vw 0;
+        line-height: 1.3;
+    }
+
+    .product-rating {
+        display: flex;
+        align-items: center;
+        gap: 1vw;
+        margin-bottom: 1.5vw;
+    }
+
+    .product-rating .stars {
+        font-size: 3vw;
+    }
+
+    .rating-val {
+        font-size: 3.2vw;
+        font-weight: 600;
+        color: #111;
+    }
+
+    .rating-count {
+        font-size: 3vw;
+        color: #888;
+    }
+
+    .product-installment {
+        display: inline-block;
+        background: rgb(214, 214, 15);
+        color: #111;
+        font-size: 3vw;
+        font-weight: 600;
+        padding: 0.8vw 2vw;
+        border-radius: 1vw;
+        margin-bottom: 1vw;
+    }
+
+/* ===== SERVICES PAGE ===== */
+
+.srv-header {
+  width: 100%;
+  background: white;
+  border-bottom: 0.1vh solid #e8e8e8;
+  padding: 0 4vw;
+  box-sizing: border-box;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+}
+
+.srv-header-inner {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.srv-header-left {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.srv-kaspi-logo {
+  width: 7vw;
+  height: 7vw;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.srv-header-title {
+  font-size: 17px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 0.2px;
+}
+
+.srv-header-langs {
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+
+.srv-lang {
+  font-size: 3vw;
+  color: #888;
+  font-weight: 500;
+}
+
+.srv-lang-active {
+  color: #111;
+  font-weight: 600;
+  border: 1px solid #d0d0d0;
+  border-radius: 1vw;
+  padding: 0.3vw 1.5vw;
+  font-size: 1vw;
+}
+
+.srv-user-row {
+  width: 100%;
+  padding: 2.5vw 4vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: white;
+  border-bottom: 1vh solid #e8e8e8;
+}
+
+.srv-user-info {
+  display: flex;
+  align-items: center;
+  gap: 3vw;
+}
+
+.srv-avatar {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.srv-user-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.srv-user-name {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #111;
+}
+
+.srv-user-settings {
+  font-size: 3.2vw;
+  color: #888;
+  font-weight: 400;
+}
+
+.srv-arrow-right {
+  width: 4vw;
+  opacity: 0.5;
+}
+
+/* Icon grid */
+.srv-grid {
+  background: white;
+  padding: 1.5vw 2vw 2vw 2vw;
+  border-bottom: 0.1vh solid #e8e8e8;
+}
+
+.srv-grid-row {
+  display: flex;
+  justify-content: space-between;
+  height: 9vh;
+  margin-bottom: 0.5vh;
+}
+
+.srv-icon-box {
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.srv-icon-box img {
+  width: 78%;
+  object-fit: contain;
+}
+
+.srv-icon-box p {
+  position: absolute;
+  bottom: 0.3vh;
+  font-size: 3.2vw;
+  font-weight: 400;
+  color: #111;
+  text-align: center;
+  white-space: nowrap;
+}
+
+/* Partner services */
+.srv-partners-header {
+  padding: 2.5vw 4vw 1vw 4vw;
+}
+
+.srv-partners-title {
+  font-size: 4vw;
+  font-weight: 600;
+  color: #111;
+}
+
+.srv-partners-list {
+  background: white;
+  padding: 0 4vw;
+}
+
+.srv-partner-row {
+  display: flex;
+  align-items: center;
+  padding: 3vw 0;
+  gap: 3vw;
+}
+
+.srv-partner-logo-wrap {
+  width: 11vw;
+  height: 11vw;
+  border-radius: 3vw;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.srv-partner-logo {
+  width: 80%;
+  object-fit: contain;
+}
+
+.srv-partner-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vw;
+}
+
+.srv-partner-name-row {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+}
+
+.srv-partner-name {
+  font-size: 4vw;
+  font-weight: 500;
+  color: #111;
+}
+
+.srv-partner-bonus {
+  background: green;
+  color: white;
+  font-size: 2.8vw;
+  font-weight: 600;
+  padding: 0.5vw 1.75vw;
+  border-radius: 2vw;
+}
+
+.srv-partner-desc {
+  font-size: 3.2vw;
+  color: #888;
+  font-weight: 400;
+}
+
+.srv-partner-divider {
+  height: 0.1vh;
+  background: #ebebeb;
+  margin-left: 14vw;
+}
+
+.srv-arrow-sm {
+  width: 3vw;
+  flex-shrink: 0;
+}
+
+/* Banner */
+.srv-banner {
+  margin: 3vw 4vw;
+  background: linear-gradient(135deg, #1a3c5e 0%, #1b4f72 100%);
+  border-radius: 3vw;
+  display: flex;
+  overflow: hidden;
+  padding: 3.5vw 4vw;
+  box-sizing: border-box;
+  align-items: center;
+  min-height: 18vw;
+}
+
+.srv-banner-left {
+  flex: 1;
+}
+
+.srv-banner-pct {
+  font-size: 5.5vw;
+  font-weight: 700;
+  color: white;
+  margin: 0 0 0.5vw 0;
+}
+
+.srv-banner-sub {
+  font-size: 3.5vw;
+  color: rgba(255,255,255,0.85);
+  margin: 0 0 2vw 0;
+  font-weight: 400;
+}
+
+.srv-banner-tags {
+  display: flex;
+  gap: 2vw;
+}
+
+.srv-tag-gold {
+  background: #c9a227;
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+  padding: 0.8vw 2.5vw;
+  border-radius: 1.5vw;
+}
+
+.srv-tag-red {
+  background: #e0342a;
+  color: white;
+  font-size: 3vw;
+  font-weight: 700;
+  padding: 0.8vw 2.5vw;
+  border-radius: 1.5vw;
+}
+
+.srv-banner-right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.srv-banner-img {
+  width: 18vw;
+  object-fit: contain;
+  filter: brightness(1.1);
+}
+
+.srv-banner-date {
+  font-size: 2.8vw;
+  color: rgba(255,255,255,0.7);
+  margin-top: 1vw;
+  font-weight: 400;
+}
+
+
+/* ============================================
+   SERVICES PAGE — OVERRIDES & NEW STYLES
+   ============================================ */
+
+/* --- HEADER: center logo+title, right langs --- */
+.srv-header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 6vh;
+  background: white;
+  border-bottom: 0.1vh solid #e8e8e8;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.srv-header-spacer {
+  flex: 1;
+}
+
+.srv-header-center-block {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.srv-header-langs {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 2vw;
+  padding-right: 4vw;
+}
+
+/* Language switcher pill */
+.srv-lang-switcher {
+  border: 1.5px solid #e0342a;
+  border-radius: 3vw;
+  padding: 0.5vw 2vw;
+  display: inline-flex;
+  align-items: center;
+}
+
+.srv-lang-active {
+  color: #e0342a !important;
+  font-weight: 600;
+  font-size: 3vw;
+  border: none !important;
+  padding: 0 !important;
+  border-radius: 0 !important;
+}
+
+/* --- ICON GRID: use same .box style as main sections --- */
+.srv-grid {
+  background: white;
+  padding: 1vw 2vw 1vw 2vw;
+  height: 33vh;
+  border-bottom: 1vh solid #e8e8e8;
+}
+
+.srv-grid-row {
+  display: flex;
+  justify-content: space-between;
+  height: 10vh;
+  margin-bottom: 0;
+}
+
+/* srv-icon-box2 wraps .box so it inherits the exact main-page icon size */
+.srv-icon-box2 {
+  width: 22vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- PHOTO PLACEHOLDER (blue, no content) --- */
+.srv-photo-placeholder {
+  width: calc(100% - 8vw);
+  margin: 3vw 4vw;
+  height: 30vw;
+  background: #1677ff;
+  border-radius: 3vw;
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+/* --- CAROUSEL: same style as section1 on main page --- */
+.srv-carousel-section {
+  width: 100%;
+  margin-bottom: 2vw;
+}
+
+.srv-carousel-scroll {
+  width: 95%;
+  margin-left: 4.5vw;
+  height: 17vh;
+  display: flex;
+  gap: 4vw;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.srv-carousel-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.srv-carousel-card {
+  width: 42.5vw;
+  height: 13.5vh;
+  background: #d3d3d3;
+  border-radius: 4vw;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  overflow: hidden;
+}
+
+.srv-carousel-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 4vw;
+}
+
